@@ -9,7 +9,18 @@ void drawRamp(int numRows);
 
 int main(void){
 
-    drawRamp(5);
+    char str1[] = "hi2";
+    char str2[] = "hi1";
+    int index;
+    for (index = 0; str1[index] != '\0'; ++index){
+        if (str1[index] != str2[index]){
+            printf("no");
+            break;
+        }
+    }
+
+    if (str2[index] == '\0')
+    printf("yes");
 
 }
 
